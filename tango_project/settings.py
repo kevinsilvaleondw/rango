@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles' , 
     'django.contrib.admin', 
     'django.contrib.admindocs', 
-    'rango' , 
+    'rango' ,
 ]
 
 MIDDLEWARE = [
@@ -75,8 +75,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'tango_project.wsgi.application'
-
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -110,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-es'
+LANGUAGE_CODE = 'es-en'
 
 TIME_ZONE = 'Europe/Madrid'
 

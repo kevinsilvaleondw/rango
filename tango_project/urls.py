@@ -19,12 +19,13 @@ from django.urls import path
 from rango import views
 from django.conf import settings
 from django.views.static import serve
+from rest_framework import routers, serializers, viewsets
+from django.contrib.auth.models import User
 from django.contrib import admin # UNCOMMENT THIS LINE
 admin.autodiscover() # UNCOMMENT THIS LINE, TOO!
 urlpatterns = [
     url(r'^rango/', include('rango.urls')),
     url(r'^admin/', admin.site.urls),
- 
 ]
 
 if settings.DEBUG: 
@@ -32,10 +33,7 @@ if settings.DEBUG:
         url(r'^media/(?P<path>.*)$', serve, {
             'document_root': settings.MEDIA_ROOT,
         }),
+
     ]
-
-
-
-
 
    
